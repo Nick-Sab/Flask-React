@@ -2,12 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const quote = fetch('https://flask-react-u1g4-cuyw9q32y-nicks-projects-82be4173.vercel.app/');
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {quote}
         </p>
         <a
           className="App-link"
